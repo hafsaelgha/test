@@ -1,0 +1,2193 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<mera charset="utf-8">
+		<title>Check-list SCRUM</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>		<script>
+	let toggle = button => {
+    	let element = document.getElementById("ttable");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+  let toggle2 = button => {
+    	let element = document.getElementById("ttable2");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+    let toggle3 = button => {
+    	let element = document.getElementById("ttable3");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+  let toggle4 = button => {
+    	let element = document.getElementById("ttable4");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+  let toggle5 = button => {
+    	let element = document.getElementById("ttable5");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+   let toggle6 = button => {
+    	let element = document.getElementById("ttable6");
+    	let hidden = element.getAttribute("hidden");
+    	if (hidden) {
+       			element.removeAttribute("hidden");
+       			button.innerText = "Hide table";
+    } 	else {
+       			element.setAttribute("hidden", "hidden");
+       			button.innerText = "Show table";
+    }
+  }
+
+		 </script>
+	<header class="menu">
+	<nav>
+		<h1 id="logo" class="card text-center">Votre outil digital pour évaluer les pratiques SCRUM au sein de votre équipe</h1>
+	<section class="titre">
+	<h2><font size="4">Accéder à votre checklist de : Product Owner, SCRUM Master, Equipe </font></h2>
+
+</section>
+	</head>
+
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<div class="card text-center" id="cardContainer">
+		<div class="card-header" id="fiche">
+			<font size="6">Fiche d'évaluation du Product Owner</font>
+		</div>
+	<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">En relation avec le Client <button onclick="toggle(this);">Show table</button>	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH class="th-lg"> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1.	Est-ce que le besoin du client est correctement analysé par le PO ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=1 name="a" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=1 name="a" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=1 name="a" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=1 name="a" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Est-ce que ce besoin est découpé en user story clairement rédigées ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=2 name="b" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=2 name="b" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=2 name="b" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=2 name="b" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="b1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Les fonctionnalités pourraient-elles être mieux exprimées sous la forme de user stories indépendantes, négociables, ayant de la valeur, estimables, suffisamment petites, et testables ?(sigle INVEST)</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=3 name="c" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=3 name="c" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=3 name="c" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=3 name="c" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="c1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>4.	Est-ce que toutes les exigences et les désirs de toutes les parties prenantes sont présents dans le Backlog ? Rappel : le Backlog est émergent.</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=4 name="d" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=4 name="d" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=4 name="d" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=4 name="d" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="d1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>5.	Est-ce que les user story sont priorisées dans le Backlog ? (MoSCoW)</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=5 name="e" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=5 name="e" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=5 name="e" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=5 name="e" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="e1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>6.	La taille du backlog est-elle raisonnable ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=6 name="f" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=6 name="f" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=6 name="f" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=6 name="f" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="f1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>7.	Est-ce que le backlog est présenté lors de chaque planification de sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=7 name="g" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=7 name="g" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=7 name="g" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=7 name="g" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="g1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>8.	Est-ce que le backlog est modifié en fonction des feedbacks du client lors du Sprint Review ? Vos exigences vont évoluer tout le long des discussions régulières que vous aurez avec les parties prenantes / clients à propos du produit en cours de développement.</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=8 name="h" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=8 name="h" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=8 name="h" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=8 name="h" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="h1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>9.	Est-ce que le PO veille sur la présence du client au Sprint Review ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=9 name="i" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=9 name="i" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=9 name="i" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=9 name="i" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="i1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>10.	Est-ce que votre PO ajuste le plan de livraison après la dernière revue de sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=10 name="j" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=10 name="j" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=10 name="j" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=10 name="j" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="j1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD><button type="button" onclick="total()">Cliquer ici pour calculer le total de cette rubrique :</button></TD>
+			<TD><input type="number" placeholder="Total" id="t1"></TD>
+			<TD><button type="button" onclick="performance1()">Votre Performance</button>	<button type="button" onclick="save()">Générer Rapport</button></TD>
+		</TR>
+	<script>
+
+		function total(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a"]:checked').value) + Number(document.querySelector('input[name="b"]:checked').value) + Number(document.querySelector('input[name="c"]:checked').value) + Number(document.querySelector('input[name="d"]:checked').value) + Number(document.querySelector('input[name="e"]:checked').value) + Number(document.querySelector('input[name="f"]:checked').value)+Number(document.querySelector('input[name="g"]:checked').value) + Number(document.querySelector('input[name="h"]:checked').value) + Number(document.querySelector('input[name="i"]:checked').value) + Number(document.querySelector('input[name="j"]:checked').value));
+			document.getElementById("t1").value=input;
+		}
+		function performance1(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a"]:checked').value) + Number(document.querySelector('input[name="b"]:checked').value) + Number(document.querySelector('input[name="c"]:checked').value) + Number(document.querySelector('input[name="d"]:checked').value) + Number(document.querySelector('input[name="e"]:checked').value) + Number(document.querySelector('input[name="f"]:checked').value)+Number(document.querySelector('input[name="g"]:checked').value) + Number(document.querySelector('input[name="h"]:checked').value) + Number(document.querySelector('input[name="i"]:checked').value) + Number(document.querySelector('input[name="j"]:checked').value));
+			if(input>=0 && input <=10){
+				alert('Performance Faible');
+			} else if(input>10 && input<=20){
+				alert('Performance Moyenne');
+			} else if(input>20 && input<=30){
+				alert('Performance très satisfaisante');
+			}
+			r0();
+			r1();
+			r2();
+			r3();
+			r4();
+			r5();
+			r6();
+			r7();
+			r8();
+			r9();
+			}
+		function r0(){
+				var r0 = Number(document.querySelector('input[name="a"]:checked').value);
+				if(r0 == 0){
+							document.getElementById("a1").value = "Alerte! Le PO n'assimile pas correctement le besoin client !";
+						}else if(r0 == 1){
+							document.getElementById("a1").value = "A améliorer : les attentes client ne correspondent pas vraiment au besoin assimilé par le PO";}
+							else if(r0 ==2) {
+								document.getElementById("a1").value = "Audit appliqué correctement";}
+									else if(r0 ==3){
+								document.getElementById("a1").value = "Audit parfaitement appliqué";}
+										else if(r0 == ""){
+											document.getElementById("a1").value = "";}
+				return document.getElementById("a1").value;
+		}
+		function r1(){
+			var r1 = Number(document.querySelector('input[name="b"]:checked').value);
+			if(r1 == 0){
+							document.getElementById("b1").value = "Alerte! Le besoin du client n'est pas formulé en user stories";
+						}else if(r1 == 1){
+							document.getElementById("b1").value = "A améliorer: Opter pour une rédaction claire des user stories";}
+							else if(r1 ==2) {
+								document.getElementById("b1").value = "Audit appliqué correctement";}
+									else if(r1 ==3){
+								document.getElementById("b1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("b1").value;
+		}
+		function r2(){
+			var r2 = Number(document.querySelector('input[name="c"]:checked').value);
+			if(r2 == 0){
+							document.getElementById("c1").value = "Alerte! Les user stories ne respectent pas le sigle INVEST ! (Infos)";
+						}else if(r2 == 1){
+							document.getElementById("c1").value = "A améliorer: les users stories sont rédigées mais pas dans les normes de SCRUM, penser à adopter le sigle INVEST";}
+							else if(r2 ==2) {
+								document.getElementById("c1").value = "Audit appliqué correctement";}
+									else if(r2 ==3){
+								document.getElementById("c1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("c1").value;
+		}
+		function r3(){
+			var r3 = Number(document.querySelector('input[name="d"]:checked').value);
+			if(r3 == 0){
+							document.getElementById("d1").value = "Alerte! Les exigences du client ne sont pas toutes présentes dans le Backlog, vous risquez de développer un service incompatible avec les attentes du client. Pensez à adopter le mindset User-centric";
+						}else if(r3 == 1){
+							document.getElementById("d1").value = "A améliorer: Pensez à adopter le mindset User-centric";}
+							else if(r3 ==2) {
+								document.getElementById("d1").value = "Audit appliqué correctement";}
+									else if(r3 ==3){
+								document.getElementById("d1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("d1").value;
+		}
+		function r4(){
+			var r4 = Number(document.querySelector('input[name="e"]:checked').value);
+			if(r4 == 0){
+							document.getElementById("e1").value = "Alerte! Absence de priorisation des user stories au niveau du Backlog. L'adoption d'une priorisation en MoSCoW vous aidera à atteindre le Goal Sprint.(Infos)";
+						}else if(r4 == 1){
+							document.getElementById("e1").value = "A améliorer: Adopter une priorisation MoSCoW des user stories.";}
+							else if(r4 ==2) {
+								document.getElementById("e1").value = "Audit appliqué correctement";}
+									else if(r4 ==3){
+								document.getElementById("e1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("e1").value;
+		}
+		function r5(){
+			var r5 = Number(document.querySelector('input[name="f"]:checked').value);
+			if(r5 == 0){
+							document.getElementById("f1").value = "Alerte! Le Backlog est trop chargé. Ceci agira sur la vélocité de votre équipe et sur la probabilité d'atteindre le Goal Sprint.";
+						}else if(r5 == 1){
+							document.getElementById("f1").value = "A améliorer: Ajuster la taille du Backlog en fonction des paramètres suivants: \n"+"1-Vélocité de l'équipe "+"2-Estimation et Complexité technique des user stories "+"3-Statistiques sur le temps passé en développement des fiches similaires" }
+							else if(r5 ==2) {
+								document.getElementById("f1").value = "Audit appliqué correctement";}
+									else if(r5 ==3){
+								document.getElementById("f1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("f1").value;
+		}
+		function r6(){
+			var r6 = Number(document.querySelector('input[name="g"]:checked').value);
+			if(r6 == 0){
+							document.getElementById("g1").value = "Alerte! Le backlog n'est pas présenté lors de la plannification du Sprint. Le Goall Sprint restera ambigue par la suite.";
+						}else if(r6 == 1){
+							document.getElementById("g1").value = "A améliorer: présenter clairement le Sprint Backlog, permettra à l'équipe de rester concentrée sur le Goal Sprint";}
+							else if(r6 ==2) {
+								document.getElementById("g1").value = "Audit appliqué correctement";}
+									else if(r6 ==3){
+								document.getElementById("g1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("g1").value;
+		}
+		function r7(){
+			var r7 = Number(document.querySelector('input[name="h"]:checked').value);
+			if(r7 == 0){
+							document.getElementById("h1").value = "Alerte! L'adaptation au changement ne fait pas partie de vos pratiques agiles.La transmission des feedbacks client permettra à l'équipe de répondre clairement aux attentes du client au niveau produit.";
+						}else if(r7 == 1){
+							document.getElementById("h1").value = "A améliorer: Le backlog est toujours en évolution, prendre en compte ses feedbacks client améliorera la qualité de l'incrément de chaque sprint";}
+							else if(r7 ==2) {
+								document.getElementById("h1").value = "Audit appliqué correctement";}
+									else if(r7 ==3){
+								document.getElementById("h1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("h1").value;
+		}
+		function r8(){
+			var r8 = Number(document.querySelector('input[name="i"]:checked').value);
+			if(r8 == 0){
+							document.getElementById("i1").value = "Alerte! Le client est absent lors du Sprint Review.Vous risquez de développer un produit différent aux attentes du client.";
+						}else if(r8 == 1){
+							document.getElementById("i1").value = "A améliorer: La présence du client lors du Sprint Review incarne votre mindset 'user centric'. Ainsi, faire participer le client lors de ces rituels, vous permetterta de développer un produit qui répond pertinement à ses attentes.";}
+							else if(r8 ==2) {
+								document.getElementById("i1").value = "Audit appliqué correctement";}
+									else if(r8 ==3){
+								document.getElementById("i1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("i1").value;
+		}
+		function r9(){
+			var r9 = Number(document.querySelector('input[name="j"]:checked').value);
+			if(r9 == 0){
+							document.getElementById("j1").value = "Alerte! La minorité des Product Owners qui livrent des produits correctement testés à temps re-planifient la version à chaque Sprint. Ceci implique probablement de reporter certains items à des versions futures au profit d’items plus importants découverts en cours de route.";
+						}else if(r9 == 1){
+							document.getElementById("j1").value = "A améliorer:  La minorité des Product Owners qui livrent des produits correctement testés à temps re-planifient la version à chaque Sprint. Ceci implique probablement de reporter certains items à des versions futures au profit d’items plus importants découverts en cours de route." ;}
+							else if(r9 ==2) {
+								document.getElementById("j1").value = "Audit appliqué correctement";}
+									else if(r9 ==3){
+								document.getElementById("j1").value = "Audit parfaitement appliqué";}
+			
+			return document.getElementById("j1").value;
+		}
+		function tri1(){
+			let a1=0;
+			if(((document.getElementById("a1").value).includes("Alerte!")==true) || ((document.getElementById("a1").value).includes("A améliorer")==true)){
+				document.getElementById("a1").value = "-Audit 1: "+ document.getElementById("a1").value + "\n";
+			}else{
+				document.getElementById("a1").value = "";
+			}return a1 = document.getElementById("a1").value;
+		}
+		function tri2(){
+			let b1=0;
+			if(((document.getElementById("b1").value).includes("Alerte!")==true) || ((document.getElementById("b1").value).includes("A améliorer")==true)){
+				document.getElementById("b1").value = "-Audit 2: "+ document.getElementById("b1").value + "\n";
+			}else{
+				document.getElementById("b1").value = "";
+			}return b1 = document.getElementById("b1").value;
+		}
+		function tri3(){
+			let c1=0;
+			if(((document.getElementById("c1").value).includes("Alerte!")==true) || ((document.getElementById("c1").value).includes("A améliorer")==true)){
+				document.getElementById("c1").value = "-Audit 3: "+ document.getElementById("c1").value + "\n";
+			}else{
+				document.getElementById("c1").value = "";
+			}return c1 = document.getElementById("c1").value;
+		}
+		function tri4(){
+			let d1=0;
+			if(((document.getElementById("d1").value).includes("Alerte!")==true) || ((document.getElementById("d1").value).includes("A améliorer")==true)){
+				document.getElementById("d1").value = "-Audit 4: "+ document.getElementById("d1").value + "\n";
+			}else{
+				document.getElementById("d1").value = "";
+			}return d1 = document.getElementById("d1").value;
+		}
+		function tri5(){
+			let e1=0;
+			if(((document.getElementById("e1").value).includes("Alerte!")==true) || ((document.getElementById("a1").value).includes("A améliorer")==true)){
+				document.getElementById("e1").value = "-Audit 5: "+ document.getElementById("e1").value + "\n";
+			}else{
+				document.getElementById("e1").value = "";
+			}return e1 = document.getElementById("e1").value;
+		}
+		function tri6(){
+			let f1=0;
+			if(((document.getElementById("f1").value).includes("Alerte!")==true) || ((document.getElementById("f1").value).includes("A améliorer")==true)){
+				document.getElementById("f1").value = "-Audit 6: "+ document.getElementById("f1").value + "\n";
+			}else{
+				document.getElementById("f1").value = "";
+			}return f1 = document.getElementById("f1").value;
+		}
+		function tri7(){
+			let g1=0;
+			if(((document.getElementById("g1").value).includes("Alerte!")==true) || ((document.getElementById("g1").value).includes("A améliorer")==true)){
+				document.getElementById("g1").value = "-Audit 7:"+document.getElementById("g1").value + "\n";
+			}else{
+				document.getElementById("g1").value = "";
+			}return g1 = document.getElementById("g1").value;
+		}
+		function tri8(){
+			let h1=0;
+			if(((document.getElementById("h1").value).includes("Alerte!")==true) || ((document.getElementById("h1").value).includes("A améliorer")==true)){
+				document.getElementById("h1").value = "-Audit 8: "+ document.getElementById("h1").value + "\n";
+			}else{
+				document.getElementById("h1").value = "";
+			}return h1 = document.getElementById("h1").value;
+		}
+		function tri9(){
+			let i1=0;
+			if(((document.getElementById("i1").value).includes("Alerte!")==true) || ((document.getElementById("i1").value).includes("A améliorer")==true)){
+				document.getElementById("i1").value = "-Audit 9: "+ document.getElementById("i1").value + "\n";
+			}else{
+				document.getElementById("i1").value = "";
+			}return i1 = document.getElementById("i1").value;
+		}
+		function tri10(){
+			let j1=0;
+			if(((document.getElementById("j1").value).includes("Alerte!")==true) || ((document.getElementById("j1").value).includes("A améliorer")==true)){
+				document.getElementById("j1").value = "-Audit 10: "+ document.getElementById("j1").value + "\n";
+			}else{
+				document.getElementById("j1").value = "";
+			}return j1 = document.getElementById("j1").value;
+		}
+		function save(){ //genere le fichier text contenant les alertes
+			tri1();
+			tri2();
+			tri3();
+			tri4();
+			tri5();
+			tri6();
+			tri7();
+			tri8();
+			tri9();
+			tri10();
+			var rapport = new File(["Rapport \n \n"+" Pour mieux maitriser les pratiques SCRUM au sein de votre équipe, veuillez revoir les points suivants:\n \n"+a1.value +"\n"+b1.value+"\n"+c1.value+"\n"+d1.value+"\n"+e1.value+"\n"+f1.value+"\n"+g1.value+"\n"+h1.value+"\n"+i1.value+"\n"+j1.value],"Rapport.txt",{type: "text/plain;charset=utf8"});
+			saveAs(rapport);
+		}
+	</script>
+
+
+	</TABLE>
+	
+	<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable2" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">En relation avec le PO  <button onclick="toggle2(this);">Show table</button>
+	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1.	Est-ce que le PO maintient une communication régulière avec le SM afin d’éclaircir les attentes évolutives du client ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=11 name="k" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=11 name="k" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=11 name="k" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=11 name="k" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="k2" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Est-ce que le PO collabore avec le SM lors de la rédaction du Backlog ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=12 name="l" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=12 name="l" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=12 name="l" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=12 name="l" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="l2" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Est-ce que le PO collabore avec le SM pour produire un plan de livraison réaliste selon les graphiques qui montrent le taux de réalisation du Backlog ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=13 name="m" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=13 name="m" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=13 name="m" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=13 name="m" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="m2" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD> <button type="button" onclick="total2()">Cliquer ici pour calculer votre total de rubrique : </button></TD>
+			<TD> <input type="number" placeholder="Total" id="t2"> </TD>
+			<TD><button type="button" onclick="performance2()">Votre Performance</button>	<button type="button" onclick="save2()">Générer Rapport</button></TD>
+		
+		</TR>
+	
+	<script>	
+		function total2(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="k"]:checked').value) + Number(document.querySelector('input[name="l"]:checked').value) + Number(document.querySelector('input[name="m"]:checked').value));
+			document.getElementById("t2").value=input;
+		}
+
+		function performance2(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="k"]:checked').value) + Number(document.querySelector('input[name="l"]:checked').value) + Number(document.querySelector('input[name="m"]:checked').value));
+			if(input>=0 && input <=3){
+				alert('Performance Faible');
+			} else if(input>3 && input<=6){
+				alert('Performance Moyenne');
+			} else if(input>6 && input<=9){
+				alert('Performance très satisfaisante');
+			}
+			t0();
+			t1();
+			t2();
+			}
+		function t0(){
+				var t0 = Number(document.querySelector('input[name="k"]:checked').value);
+				if(t0 == 0){
+							document.getElementById("k2").value = "Alerte! Le PO ne communique pas régulièrement avec le SM!";
+						}else if(t0 == 1){
+							document.getElementById("k2").value = "A améliorer : maintenir un niveau de communication régulier avec le SM vous permettra d'améliorer l'incrément du Sprint";}
+							else if(t0 ==2) {
+								document.getElementById("k2").value = "Audit appliqué correctement";}
+									else if(t0 ==3){
+								document.getElementById("k2").value = "Audit parfaitement appliqué";}
+										else if(t0 == ""){
+											document.getElementById("k2").value = "";}
+				return document.getElementById("k2").value;
+		}
+		function t1(){
+				var t1 = Number(document.querySelector('input[name="l"]:checked').value);
+				if(t1 == 0){
+							document.getElementById("l2").value = "Alerte! Le PO ne collabore pas avec le SM pour rédiger le Backlog. Ceci rend la tache de la compréhension des user stories par les développeurs difficile.";
+						}else if(t1 == 1){
+							document.getElementById("l2").value = "A améliorer : Impliquer le SM lors de la rédaction du Backlog permettera une bonne maitrise du contenu du Backlog et de ses critères";}
+							else if(t1 ==2) {
+								document.getElementById("l2").value = "Audit appliqué correctement";}
+									else if(t1 ==3){
+								document.getElementById("l2").value = "Audit parfaitement appliqué";}
+										else if(t1 == ""){
+											document.getElementById("l2").value = "";}
+				return document.getElementById("l2").value;
+		}
+		function t2(){
+				var t2 = Number(document.querySelector('input[name="m"]:checked').value);
+				if(t2 == 0){
+							document.getElementById("m2").value = "Alerte! Pendant les réunions de revue de Sprint, vous pourriez montrer à tous le graphique de Product/Release Burndown indiquant les items qui ont été certifiés finis. Les graphiques montrant le taux de réalisation des items du Backlog et celui d’ajout des nouveaux items permettent de révéler au plus tôt les dérives de périmètre/planning.";
+						}else if(t2 == 1){
+							document.getElementById("m2").value = "A améliorer : Pendant les réunions de revue de Sprint, vous pourriez montrer à tous le graphique de Product/Release Burndown indiquant les items qui ont été certifiés finis. Les graphiques montrant le taux de réalisation des items du Backlog et celui d’ajout des nouveaux items permettent de révéler au plus tôt les dérives de périmètre/planning.";}
+							else if(t2 ==2) {
+								document.getElementById("m2").value = "Audit appliqué correctement";}
+									else if(t2 ==3){
+								document.getElementById("m2").value = "Audit parfaitement appliqué";}
+										else if(t2 == ""){
+											document.getElementById("m2").value = "";}
+				return document.getElementById("m2").value;
+		}
+		function trik2(){
+			let k2=0;
+			if(((document.getElementById("k2").value).includes("Alerte!")==true) || ((document.getElementById("k2").value).includes("A améliorer")==true)){
+				document.getElementById("k2").value = "-Audit 1: "+ document.getElementById("k2").value + "\n";
+			}else{
+				document.getElementById("k2").value = "";
+			}return k2 = document.getElementById("k2").value;
+		}
+		function tril2(){
+			let l2=0;
+			if(((document.getElementById("l2").value).includes("Alerte!")==true) || ((document.getElementById("l2").value).includes("A améliorer")==true)){
+				document.getElementById("l2").value = "-Audit 2: "+ document.getElementById("l2").value + "\n";
+			}else{
+				document.getElementById("l2").value = "";
+			}return l2 = document.getElementById("l2").value;
+		}
+		function trim2(){
+			let m2=0;
+			if(((document.getElementById("m2").value).includes("Alerte!")==true) || ((document.getElementById("m2").value).includes("A améliorer")==true)){
+				document.getElementById("m2").value = "-Audit 3: "+ document.getElementById("m2").value + "\n";
+			}else{
+				document.getElementById("m2").value = "";
+			}return m2 = document.getElementById("m2").value;
+		}
+		function save2(){ //genere le fichier text contenant les alertes
+			trik2();
+			tril2();
+			trim2();
+			var rapport2 = new File(["Rapport \n \n"+" Pour mieux maitriser les pratiques SCRUM au sein de votre équipe, veuillez revoir les points suivants:\n \n"+k2.value +"\n"+l2.value+"\n"+m2.value],"Rapport.txt",{type: "text/plain;charset=utf8"});
+			saveAs(rapport2);
+		}
+
+
+
+		
+
+	</script>
+</TABLE>
+<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable3" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">En relation avec l'équipe <button onclick="toggle3(this);">Show table</button>
+	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1.	Est-ce que l’équipe est impliquée dans la formulation des user stories ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=14 name="a14" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=14 name="a14" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=14 name="a14" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=14 name="a14" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a14" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Lors du Planning Poker, la complexité des user stories est-elle estimée en collaboration entre l’équipe et le PO ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=15 name="a15" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=15 name="a15" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=15 name="a15" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=15 name="a15" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a15" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Avant chaque début de sprint, le Sprint Backlog est-il mis à disposition de l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=16 name="a16" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=16 name="a16" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=16 name="a16" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=16 name="a16" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a16" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>4.	Avant chaque début de sprint, le Sprint Goal est-il fixé et compris par toutes les parties prenantes ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=17 name="a17" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=17 name="a17" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=17 name="a17" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=17 name="a17" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a17" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>5.	La définition of Done est-elle la même pour tous les membres ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=18 name="a18" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=18 name="a18" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=18 name="a18" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=18 name="a18" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a18" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>6.	Est-ce que le PO participe avec l’équipe au Sprint Review ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=19 name="a19" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=19 name="a19" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=19 name="a19" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=19 name="a19" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a19" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>7.	Est-ce que le PO participe avec l’équipe à la Retrospective Sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=20 name="a20" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=20 name="a20" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=20 name="a20" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=20 name="a20" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a20" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>8.	Est-ce que le PO investit dans un outil de gestion de projet accessible à toute l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=21 name="a21" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=21 name="a21" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=21 name="a21" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=21 name="a21" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a21" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>9.	Les déploiements de l’équipe sont-ils accessibles à tout instant par le PO ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=22 name="a22" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=22 name="a22" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=22 name="a22" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=22 name="a22" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a22" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>10.	Est-ce que le PO accède à un serveur d’intégration continue pour lancer des tests ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=23 name="a23" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=23 name="a23" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=23 name="a23" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=23 name="a23" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a23" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>11.	Les livrables sont-ils conformes aux user stories associées ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=24 name="a24" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=24 name="a24" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=24 name="a24" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=24 name="a24" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a24" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD> <button type="button" onclick="total3()">Cliquer ici pour calculer votre total de rubrique : </button></TD>
+			<TD> <input type="number" placeholder="Total" id="t3"> </TD>
+			<TD><button type="button" onclick="performance3()">Votre Performance</button>	<button type="button" onclick="save3()">Générer Rapport</button></TD>
+		</TR>
+	<script>
+	function total3(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a14"]:checked').value) + Number(document.querySelector('input[name="a15"]:checked').value) + Number(document.querySelector('input[name="a16"]:checked').value) + Number(document.querySelector('input[name="a17"]:checked').value) + Number(document.querySelector('input[name="a18"]:checked').value) + Number(document.querySelector('input[name="a19"]:checked').value)+Number(document.querySelector('input[name="a20"]:checked').value) + Number(document.querySelector('input[name="a21"]:checked').value) + Number(document.querySelector('input[name="a22"]:checked').value) + Number(document.querySelector('input[name="a23"]:checked').value)+Number(document.querySelector('input[name="a24"]:checked').value));
+			document.getElementById("t3").value=input;
+		}
+	function performance3(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a14"]:checked').value) + Number(document.querySelector('input[name="a15"]:checked').value) + Number(document.querySelector('input[name="a16"]:checked').value) + Number(document.querySelector('input[name="a17"]:checked').value) + Number(document.querySelector('input[name="a18"]:checked').value) + Number(document.querySelector('input[name="a19"]:checked').value)+Number(document.querySelector('input[name="a20"]:checked').value) + Number(document.querySelector('input[name="a21"]:checked').value) + Number(document.querySelector('input[name="a22"]:checked').value) + Number(document.querySelector('input[name="a23"]:checked').value)+Number(document.querySelector('input[name="a24"]:checked').value));
+			if(input>=0 && input <=11){
+				alert('Performance Faible');
+			} else if(input>11 && input<=22){
+				alert('Performance Moyenne');
+			} else if(input>22 && input<=33){
+				alert('Performance très satisfaisante');
+			}
+			s0();
+			s1();
+			s2();
+			s3();
+			s4();
+			s5();
+			s6();
+			s7();
+			s8();
+			s9();
+			s10();
+			}
+		function s0(){
+				var s0 = Number(document.querySelector('input[name="a14"]:checked').value);
+				if(s0 == 0){
+							document.getElementById("a14").value = "Alerte! L'équipe n'est pas impliquée dans la formulation des user stories, ceci risque de générer des user stories incompréhensibles par les développeurs";
+						}else if(s0 == 1){
+							document.getElementById("a14").value = "A améliorer : L'implication de l'équipe lors de la formulation des user stories facilitera le travail des développeurs par la suite, une meilleur compréhension du besoin client et de la solution technique qui y correspond." }
+							else if(s0 ==2) {
+								document.getElementById("a14").value = "Audit appliqué correctement";}
+									else if(s0 ==3){
+								document.getElementById("a14").value = "Audit parfaitement appliqué";}
+										else if(s0 == ""){
+											document.getElementById("a14").value = "";}
+				return document.getElementById("a14").value;
+		}
+		function s1(){
+				var s1 = Number(document.querySelector('input[name="a15"]:checked').value);
+				if(s1 == 0){
+							document.getElementById("a15").value = "Alerte! Le PO ne participe pas à l'estimation des user stories lors du planning poker";
+						}else if(s1 == 1){
+							document.getElementById("a15").value = "A améliorer : estimer la complexité des users stories en groupe est favorable pour avoir une idée réaliste sur la durée des livrables" }
+							else if(s1 ==2) {
+								document.getElementById("a15").value = "Audit appliqué correctement";}
+									else if(s1 ==3){
+								document.getElementById("a15").value = "Audit parfaitement appliqué";}
+										else if(s1 == ""){
+											document.getElementById("a15").value = "";}
+				return document.getElementById("a15").value;
+		}
+		function s2(){
+				var s2 = Number(document.querySelector('input[name="a16"]:checked').value);
+				if(s2 == 0){
+							document.getElementById("a16").value = "Alerte! Le Sprint Backlog n'est pas mis à disposition de l'équipe avant chaque Sprint. Vous risquez d'etre loin du Goal Sprint";
+						}else if(s2 == 1){
+							document.getElementById("a16").value = "A améliorer : Metere le Sprint Backlog à dispositioin de l'équipe avant chaque Sprint vous aidera à atteindre efficacement votre Goal Sprint." }
+							else if(s2 ==2) {
+								document.getElementById("a16").value = "Audit appliqué correctement";}
+									else if(s2 ==3){
+								document.getElementById("a16").value = "Audit parfaitement appliqué";}
+										else if(s2 == ""){
+											document.getElementById("a16").value = "";}
+				return document.getElementById("a16").value;
+		}
+		function s3(){
+				var s3 = Number(document.querySelector('input[name="a17"]:checked').value);
+				if(s3 == 0){
+							document.getElementById("a17").value = "Alerte! Aucun Sprint Goal n'est fixé au début du sprint.";
+						}else if(s3 == 1){
+							document.getElementById("a17").value = "A améliorer : Fixer un Goal Sprint clair avant chaque début de Sprint vous permet de controler tout au long du sprint si l'équipe est encore concentrée autour de ce but." }
+							else if(s3 ==2) {
+								document.getElementById("a17").value = "Audit appliqué correctement";}
+									else if(s3 ==3){
+								document.getElementById("a17").value = "Audit parfaitement appliqué";}
+										else if(s3 == ""){
+											document.getElementById("a17").value = "";}
+				return document.getElementById("a17").value;
+		}
+		function s4(){
+				var s4 = Number(document.querySelector('input[name="a18"]:checked').value);
+				if(s4 == 0){
+							document.getElementById("a18").value = "Alerte! La définition of Done n'est pas bien assimilée par tous les membres de l'équipe.";
+						}else if(s4 == 1){
+							document.getElementById("a18").value = "A améliorer : etre d'accord sur la meme définition of Done alignera les buts de l'équipe tout au long du Sprint." }
+							else if(s4 ==2) {
+								document.getElementById("a18").value = "Audit appliqué correctement";}
+									else if(s4 ==3){
+								document.getElementById("a18").value = "Audit parfaitement appliqué";}
+										else if(s4 == ""){
+											document.getElementById("a18").value = "";}
+				return document.getElementById("a18").value;
+		}
+		function s5(){
+				var s5 = Number(document.querySelector('input[name="a19"]:checked').value);
+				if(s5 == 0){
+							document.getElementById("a19").value = "Alerte! Absence du PO lors du Sprint Review.";
+						}else if(s5 == 1){
+							document.getElementById("a19").value = "A améliorer : la présence du PO à chaque Sprint Review est obligatoire pour controler la qualité du livrable." }
+							else if(s5 ==2) {
+								document.getElementById("a19").value = "Audit appliqué correctement";}
+									else if(s5 ==3){
+								document.getElementById("a19").value = "Audit parfaitement appliqué";}
+										else if(s5 == ""){
+											document.getElementById("a19").value = "";}
+				return document.getElementById("a19").value;
+		}
+		function s6(){
+				var s6 = Number(document.querySelector('input[name="a20"]:checked').value);
+				if(s6 == 0){
+							document.getElementById("a20").value = "Alerte! Absence du PO lors de la retrospective Sprint.";
+						}else if(s6 == 1){
+							document.getElementById("a20").value = "A améliorer : la présence du PO à la retrospective Sprint est obligatoire pour améliorer la qualité de l'incrément suivant." }
+							else if(s6 ==2) {
+								document.getElementById("a20").value = "Audit appliqué correctement";}
+									else if(s6 ==3){
+								document.getElementById("a20").value = "Audit parfaitement appliqué";}
+										else if(s6 == ""){
+											document.getElementById("a20").value = "";}
+				return document.getElementById("a20").value;
+		}
+		function s7(){
+				var s7 = Number(document.querySelector('input[name="a21"]:checked').value);
+				if(s7 == 0){
+							document.getElementById("a21").value = "Alerte! Le PO n'investit pas dans un outil de gestion.";
+						}else if(s7 == 1){
+							document.getElementById("a21").value = "A améliorer : Mettre un outil de gestion en ligne accessible à toute l'équipe vous donnera une vision nette et claire sur le déroulement de chaque sprint." }
+							else if(s7 ==2) {
+								document.getElementById("a21").value = "Audit appliqué correctement";}
+									else if(s7 ==3){
+								document.getElementById("a21").value = "Audit parfaitement appliqué";}
+										else if(s7 == ""){
+											document.getElementById("a21").value = "";}
+				return document.getElementById("a21").value;
+		}
+		function s8(){
+				var s8 = Number(document.querySelector('input[name="a22"]:checked').value);
+				if(s8 == 0){
+							document.getElementById("a22").value = "Alerte! Les déploiements de l'équipe ne sont pas accessibles par le PO.";
+						}else if(s8 == 1){
+							document.getElementById("a22").value = "A améliorer : Permettre au PO d'accéder aux déploiements à tout instant permettra de controler l'uniformité des livrables aux users stories et ainsi d'adopter le changement nécessaire." }
+							else if(s8 ==2) {
+								document.getElementById("a22").value = "Audit appliqué correctement";}
+									else if(s8 ==3){
+								document.getElementById("a22").value = "Audit parfaitement appliqué";}
+										else if(s8 == ""){
+											document.getElementById("a22").value = "";}
+				return document.getElementById("a22").value;
+		}
+		function s9(){
+				var s9 = Number(document.querySelector('input[name="a23"]:checked').value);
+				if(s9 == 0){
+							document.getElementById("a23").value = "Alerte! Le PO ne dispose pas de l'accès à un serveur d'intégration continue pour lancer les  test. ";
+						}else if(s9 == 1){
+							document.getElementById("a23").value = "A améliorer : Permettre au PO d'accéder au serveur d'intégration continue afin de controler l'uniformité des livrables aux users stories et ainsi d'adopter le changement nécessaire" }
+							else if(s9 ==2) {
+								document.getElementById("a23").value = "Audit appliqué correctement";}
+									else if(s9 ==3){
+								document.getElementById("a23").value = "Audit parfaitement appliqué";}
+										else if(s9 == ""){
+											document.getElementById("a23").value = "";}
+				return document.getElementById("a23").value;
+		}
+		function s10(){
+				var s10 = Number(document.querySelector('input[name="a24"]:checked').value);
+				if(s10 == 0){
+							document.getElementById("a24").value = "Alerte! Les livrables ne sont pas conformes aux users stories associées. Vous développez un produit qui ne répond pas aux besoins du client.";
+						}else if(s10 == 1){
+							document.getElementById("a24").value = "A améliorer : Les tests d'acceptance vous permet d'etre sure que vos livrables répondent bien aux users stories associées. " }
+							else if(s10 ==2) {
+								document.getElementById("a24").value = "Audit appliqué correctement";}
+									else if(s10 ==3){
+								document.getElementById("a24").value = "Audit parfaitement appliqué";}
+										else if(s10 == ""){
+											document.getElementById("a24").value = "";}
+				return document.getElementById("a24").value;
+		}
+		function tria14(){
+			let a14=0;
+			if(((document.getElementById("a14").value).includes("Alerte!")==true) || ((document.getElementById("a14").value).includes("A améliorer")==true)){
+				document.getElementById("a14").value = "-Audit 1: "+ document.getElementById("a14").value + "\n";
+			}else{
+				document.getElementById("a14").value = "";
+			}return a14 = document.getElementById("a14").value;
+		}
+		function tria15(){
+			let a15=0;
+			if(((document.getElementById("a15").value).includes("Alerte!")==true) || ((document.getElementById("a15").value).includes("A améliorer")==true)){
+				document.getElementById("a15").value = "-Audit 2: "+ document.getElementById("a15").value + "\n";
+			}else{
+				document.getElementById("a15").value = "";
+			}return a15 = document.getElementById("a15").value;
+		}
+		function tria16(){
+			let a16=0;
+			if(((document.getElementById("a16").value).includes("Alerte!")==true) || ((document.getElementById("a16").value).includes("A améliorer")==true)){
+				document.getElementById("a16").value = "-Audit 3: "+ document.getElementById("a15").value + "\n";
+			}else{
+				document.getElementById("a16").value = "";
+			}return a16 = document.getElementById("a16").value;
+		}
+		function tria17(){
+			let a17=0;
+			if(((document.getElementById("a17").value).includes("Alerte!")==true) || ((document.getElementById("a17").value).includes("A améliorer")==true)){
+				document.getElementById("a17").value = "-Audit 4: "+ document.getElementById("a17").value + "\n";
+			}else{
+				document.getElementById("a17").value = "";
+			}return a17 = document.getElementById("a17").value;
+		}
+		function tria18(){
+			let a18=0;
+			if(((document.getElementById("a18").value).includes("Alerte!")==true) || ((document.getElementById("a18").value).includes("A améliorer")==true)){
+				document.getElementById("a18").value = "-Audit 5: "+ document.getElementById("a15").value + "\n";
+			}else{
+				document.getElementById("a18").value = "";
+			}return a18 = document.getElementById("a18").value;
+		}
+		function tria19(){
+			let a19=0;
+			if(((document.getElementById("a19").value).includes("Alerte!")==true) || ((document.getElementById("a19").value).includes("A améliorer")==true)){
+				document.getElementById("a19").value = "-Audit 6: "+ document.getElementById("a19").value + "\n";
+			}else{
+				document.getElementById("a19").value = "";
+			}return a19 = document.getElementById("a19").value;
+		}
+		function tria20(){
+			let a20=0;
+			if(((document.getElementById("a20").value).includes("Alerte!")==true) || ((document.getElementById("a20").value).includes("A améliorer")==true)){
+				document.getElementById("a20").value = "-Audit 7: "+ document.getElementById("a20").value + "\n";
+			}else{
+				document.getElementById("a20").value = "";
+			}return a20 = document.getElementById("a20").value;
+		}
+		function tria21(){
+			let a21=0;
+			if(((document.getElementById("a21").value).includes("Alerte!")==true) || ((document.getElementById("a21").value).includes("A améliorer")==true)){
+				document.getElementById("a21").value = "-Audit 8: "+ document.getElementById("a21").value + "\n";
+			}else{
+				document.getElementById("a21").value = "";
+			}return a21 = document.getElementById("a21").value;
+		}
+		function tria22(){
+			let a22=0;
+			if(((document.getElementById("a22").value).includes("Alerte!")==true) || ((document.getElementById("a22").value).includes("A améliorer")==true)){
+				document.getElementById("a22").value = "-Audit 9: "+ document.getElementById("a22").value + "\n";
+			}else{
+				document.getElementById("a22").value = "";
+			}return a22 = document.getElementById("a22").value;
+		}
+		function tria23(){
+			let a23=0;
+			if(((document.getElementById("a23").value).includes("Alerte!")==true) || ((document.getElementById("a23").value).includes("A améliorer")==true)){
+				document.getElementById("a23").value = "-Audit 10: "+ document.getElementById("a23").value + "\n";
+			}else{
+				document.getElementById("a23").value = "";
+			}return a23 = document.getElementById("a23").value;
+		}
+		function tria24(){
+			let a24=0;
+			if(((document.getElementById("a24").value).includes("Alerte!")==true) || ((document.getElementById("a24").value).includes("A améliorer")==true)){
+				document.getElementById("a24").value = "-Audit 11: "+ document.getElementById("a24").value + "\n";
+			}else{
+				document.getElementById("a24").value = "";
+			}return a24 = document.getElementById("a24").value;
+		}
+
+		function save3(){ //genere le fichier text contenant les alertes
+			tria14();
+			tria15();
+			tria16();
+			tria17();
+			tria18();
+			tria19();
+			tria20();
+			tria21();
+			tria22();
+			tria23();
+			tria24();
+
+			var rapport3 = new File(["Rapport \n \n"+" Pour mieux maitriser les pratiques SCRUM au sein de votre équipe, veuillez revoir les points suivants:\n \n"+a14.value +"\n"+a15.value+"\n"+a16.value+"\n"+a17.value+"\n"+a18.value+"\n"+a19.value+"\n"+a20.value+"\n"+a21.value+"\n"+a22.value+"\n"+a23.value+"\n"+a24.value],"Rapport.txt",{type: "text/plain;charset=utf8"});
+			saveAs(rapport3);
+		}
+
+
+
+
+	</script>
+	</TABLE>
+	<div class="card text-center" id="cardContainer">
+		<div class="card-header" id="fiche">
+			<font size="6">Fiche d'évaluation du SCRUM Master</font>
+		</div>
+	<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable4" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">En relation avec le PO <button onclick="toggle4(this);">Show table</button>	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH class="th-lg"> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1. Le SM s’assure-t-il que la priorisation du Sprint Backlog faite par le PO est elle efficace pour atteindre le Goal Sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=1 name="a" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=1 name="a" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=1 name="a" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=1 name="a" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="aa1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Avez-vous expliqué à votre PO ce qu’est la dette technique et comment l’éviter ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=2 name="b" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=2 name="b" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=2 name="b" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=2 name="b" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="bb1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Les événements SCRUM sont-ils planifiés à l’avance ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=4 name="d" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=4 name="d" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=4 name="d" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=4 name="d" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="dd1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+<TR>
+			<TD> <button type="button" onclick="total22()">Cliquer ici pour calculer votre total de rubrique : </button></TD>
+			<TD> <input type="number" placeholder="Total" id="t22"> </TD>
+			<TD><button type="button" onclick="performance22()">Votre Performance</button>	<button type="button" onclick="save4()">Générer Rapport</button></TD>
+		
+		</TR>
+	
+	<script>			
+function total22(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a"]:checked').value) + Number(document.querySelector('input[name="b"]:checked').value) +Number(document.querySelector('input[name="d"]:checked').value));
+			document.getElementById("t22").value=input;
+		}
+function performance22(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="a"]:checked').value) + Number(document.querySelector('input[name="b"]:checked').value) +Number(document.querySelector('input[name="d"]:checked').value));
+			if(input>=0 && input <=3){
+				alert('Performance Faible');
+			} else if(input>3 && input<=6){
+				alert('Performance Moyenne');
+			} else if(input>6 && input<=9){
+				alert('Performance très satisfaisante');
+			}
+			p0();
+			p1();
+			p3();
+			}
+		function p0(){
+				var p0 = Number(document.querySelector('input[name="a"]:checked').value);
+				if(p0 == 0){
+							document.getElementById("aa1").value = "Alerte! Le SM n'exprime pas son avis à propos de la priorisation faite par le PO dans le Backlog. Une collaboration sur ce point permetterta à l'équipe de développement de savoir les fiches importantes à réaliser.";
+						}else if(p0 == 1){
+							document.getElementById("aa1").value = "A améliorer : Prioriser les users stories dans le Backlog est une tache collective dans le but d'atteindre le Goal Sprint.";}
+							else if(p0 ==2) {
+								document.getElementById("aa1").value = "Audit appliqué correctement";}
+									else if(p0 ==3){
+								document.getElementById("aa1").value = "Audit parfaitement appliqué";}
+										else if(p0 == ""){
+											document.getElementById("aa1").value = "";}
+				return document.getElementById("aa1").value;
+		}
+		function p1(){
+				var p1 = Number(document.querySelector('input[name="b"]:checked').value);
+				if(p1 == 0){
+							document.getElementById("bb1").value = "Alerte! Aucune mise au point à propos de la dette technique. Vous risquez de développer un produit qui fonctionne mais qui ne répond pas à la qualité du produit désiré par le client.";
+						}else if(p1 == 1){
+							document.getElementById("bb1").value = "A améliorer : Lister les taches secondaires vous permettera de produire un livrable de qualité au niveau de sa qualité logiciel. Ainsi, l'équipe de dev ne sera pas ralentie lors de l'exécution des taches principales.";}
+							else if(p1 ==2) {
+								document.getElementById("bb1").value = "Audit appliqué correctement";}
+									else if(p1 ==3){
+								document.getElementById("bb1").value = "Audit parfaitement appliqué";}
+										else if(p1 == ""){
+											document.getElementById("bb1").value = "";}
+				return document.getElementById("bb1").value;
+		}
+		function p3(){
+				var p3 = Number(document.querySelector('input[name="d"]:checked').value);
+				if(p3 == 0){
+							document.getElementById("dd1").value = "Alerte! Les événement SCRUM ne sont pas planifiés à l'avance.";
+						}else if(p3 == 1){
+							document.getElementById("dd1").value = "A améliorer : Planifier en avance ses événements SCRUM impactera positivement votre visibilité du Sprint.";}
+							else if(p3 ==2) {
+								document.getElementById("dd1").value = "Audit appliqué correctement";}
+									else if(p3 ==3){
+								document.getElementById("dd1").value = "Audit parfaitement appliqué";}
+										else if(p3 == ""){
+											document.getElementById("dd1").value = "";}
+				return document.getElementById("dd1").value;
+		}
+		function triaa1(){
+			let aa1=0;
+			if(((document.getElementById("aa1").value).includes("Alerte!")==true) || ((document.getElementById("aa1").value).includes("A améliorer")==true)){
+				document.getElementById("aa1").value = "-Audit 1: "+ document.getElementById("aa1").value + "\n";
+			}else{
+				document.getElementById("aa1").value = "";
+			}return aa1 = document.getElementById("aa1").value;
+		}
+		function tribb1(){
+			let bb1=0;
+			if(((document.getElementById("bb1").value).includes("Alerte!")==true) || ((document.getElementById("bb1").value).includes("A améliorer")==true)){
+				document.getElementById("bb1").value = "-Audit 2: "+ document.getElementById("bb1").value + "\n";
+			}else{
+				document.getElementById("bb1").value = "";
+			}return a14 = document.getElementById("bb1").value;
+		}
+		function tridd1(){
+			let dd1=0;
+			if(((document.getElementById("dd1").value).includes("Alerte!")==true) || ((document.getElementById("dd1").value).includes("A améliorer")==true)){
+				document.getElementById("dd1").value = "-Audit 3: "+ document.getElementById("dd1").value + "\n";
+			}else{
+				document.getElementById("dd1").value = "";
+			}return dd1 = document.getElementById("dd1").value;
+		}
+		function save4(){ //genere le fichier text contenant les alertes
+			triaa1();
+			tribb1();
+			tridd1();
+
+			var rapport4 = new File(["Rapport \n \n"+" Pour mieux maitriser les pratiques SCRUM au sein de votre équipe, veuillez revoir les points suivants:\n \n"+aa1.value +"\n"+bb1.value+"\n"+dd1.value],"Rapport.txt",{type: "text/plain;charset=utf8"});
+			saveAs(rapport4);
+		}
+	
+</script>
+</TABLE>
+<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable5" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">En relation avec l'équipe <button onclick="toggle5(this);">Show table</button>
+	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1.	Etes-vous en interaction continue avec les individus de l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=1 name="z1" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=1 name="z1" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=1 name="z1" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=1 name="z1" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Vous vous assurez que le Goal Sprint est bien compris par les membres de l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=2 name="z2" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=2 name="z2" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=2 name="z2" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=2 name="z2" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z2" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Organisez-vous un point de mi-Sprint pour s’assurer que l’équipe est encore concentrée sur les objectifs du Sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=3 name="z3" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=3 name="z3" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=3 name="z3" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=3 name="z3" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z3" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>4.	Disposez-vous d’une stratégie pour maximiser la valeur de l’incrément de chaque Sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=4 name="z4" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=4 name="z4" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=4 name="z4" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=4 name="z4" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z4" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>5.	La durée de Sprint est-elle adaptée en fonction de la vélocité de l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=5 name="z5" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=5 name="z5" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=5 name="z5" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=5 name="z5" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z5" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>6.	Etes-vous présent lors de chaque Daily SCRUM ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=6 name="z6" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=6 name="z6" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=6 name="z6" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=6 name="z6" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z6" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>7.	Vous vous assurez que le DS ne dépassent pas les environs de 15min (à compter 2min pour chacun) ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=7 name="z7" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=7 name="z7" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=7 name="z7" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=7 name="z7" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z7" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>8.	Vous vous assurez que le Sprint Review dure 1h30 pour 2 semaines de Sprint ? (4h pour 1mois de Sprint)</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=8 name="z8" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=8 name="z8" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=8 name="z8" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=8 name="z8" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z8" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>9.	Avez-vous essayé différentes formes et différents lieux pour réaliser vos Rétrospectives de Sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=9 name="z9" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=9 name="z9" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=9 name="z9" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=9 name="z9" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z9" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>10.	Vous vous assurez que la durée de Sprint est respectée : ne peut être ni écourtée ni prolongée ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=10 name="z10" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=10 name="z10" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=10 name="z10" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=10 name="z10" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z10" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>11.	Evitez-vous la documentation excessive ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=11 name="z11" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=11 name="z11" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=11 name="z11" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=11 name="z11" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z11" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>12.	Etes-vous capable de tester chaque livrable ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=12 name="z12" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=12 name="z12" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=12 name="z12" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=12 name="z12" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z12" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>13.	Disposez-vous d’un indicateur Niko-Niko pour afficher l’état d’esprit des membres de l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=13 name="z13" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=13 name="z13" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=13 name="z13" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=13 name="z13" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z13" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+			<TR class="table-danger">
+			<TD>14.	Permettez-vous à l’équipe d’évaluer rapidement les réunions en ROTI ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=14 name="z14" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=14 name="z14" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=14 name="z14" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=14 name="z14" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z14" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+			<TR>
+			<TD>15.	Votre niveau de confiance envers l’équipe ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=15 name="z15" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=15 name="z15" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=15 name="z15" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=15 name="z15" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z15" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>16.	La définition of Done pour les items du backlog intègre-t-elle la couverture complète des tests automatisés et le refactoring du code ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=16 name="z16" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=16 name="z16" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=16 name="z16" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=16 name="z16" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="z16" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+
+		<TR>
+			<TD> <button type="button" onclick="totalz()">Cliquer ici pour calculer votre total de rubrique : </button></TD>
+			<TD> <input type="number" placeholder="Total" id="tz"> </TD>
+			<TD><button type="button" onclick="performancez()">Votre Performance</button>	<button type="button" onclick="savez()">Générer Rapport</button></TD>
+		</TR>
+	<script>
+function totalz(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="z1"]:checked').value) + Number(document.querySelector('input[name="z2"]:checked').value) +Number(document.querySelector('input[name="z3"]:checked').value)+ Number(document.querySelector('input[name="z4"]:checked').value)+ Number(document.querySelector('input[name="z5"]:checked').value)+ Number(document.querySelector('input[name="z6"]:checked').value)+ Number(document.querySelector('input[name="z7"]:checked').value)+ Number(document.querySelector('input[name="z8"]:checked').value)+ Number(document.querySelector('input[name="z9"]:checked').value)+ Number(document.querySelector('input[name="z10"]:checked').value)+ Number(document.querySelector('input[name="z11"]:checked').value)+ Number(document.querySelector('input[name="z12"]:checked').value)+ Number(document.querySelector('input[name="z13"]:checked').value)+ Number(document.querySelector('input[name="z14"]:checked').value)+ Number(document.querySelector('input[name="z15"]:checked').value)+ Number(document.querySelector('input[name="z16"]:checked').value));
+			document.getElementById("tz").value=input;
+		}
+function performancez(){
+			let input=0;
+			input = Number(Number(document.querySelector('input[name="z1"]:checked').value) + Number(document.querySelector('input[name="z2"]:checked').value) +Number(document.querySelector('input[name="z3"]:checked').value)+ Number(document.querySelector('input[name="z4"]:checked').value)+ Number(document.querySelector('input[name="z5"]:checked').value)+ Number(document.querySelector('input[name="z6"]:checked').value)+ Number(document.querySelector('input[name="z7"]:checked').value)+ Number(document.querySelector('input[name="z8"]:checked').value)+ Number(document.querySelector('input[name="z9"]:checked').value)+ Number(document.querySelector('input[name="z10"]:checked').value)+ Number(document.querySelector('input[name="z11"]:checked').value)+ Number(document.querySelector('input[name="z12"]:checked').value)+ Number(document.querySelector('input[name="z13"]:checked').value)+ Number(document.querySelector('input[name="z14"]:checked').value)+ Number(document.querySelector('input[name="z15"]:checked').value)+ Number(document.querySelector('input[name="z16"]:checked').value));
+			if(input>=0 && input <=16){
+				alert('Performance Faible');
+			} else if(input>16 && input<=32){
+				alert('Performance Moyenne');
+			} else if(input>32 && input<=48){
+				alert('Performance très satisfaisante');
+			}
+			z1();
+			z2();
+			z3();
+			z4();
+			z5();
+			z6();
+			z7();
+			z8();
+			z9();
+			z9();
+			z10();
+			z11();
+			z12();
+			z13();
+			z14();
+			z15();
+			z16();
+		
+			}
+		function z1(){
+				var z1 = Number(document.querySelector('input[name="z1"]:checked').value);
+				if(z1 == 0){
+							document.getElementById("z1").value = "Alerte! ";
+						}else if(z1 == 1){
+							document.getElementById("z1").value = "A améliorer : ";}
+							else if(z1 ==2) {
+								document.getElementById("z1").value = "Audit appliqué correctement";}
+									else if(z1 ==3){
+								document.getElementById("z1").value = "Audit parfaitement appliqué";}
+										else if(z1 == ""){
+											document.getElementById("z1").value = "";}
+				return document.getElementById("z1").value;
+		}
+		function z2(){
+				var z2 = Number(document.querySelector('input[name="z2"]:checked').value);
+				if(z2 == 0){
+							document.getElementById("z2").value = "Alerte! ";
+						}else if(z2 == 1){
+							document.getElementById("z2").value = "A améliorer : ";}
+							else if(z2 ==2) {
+								document.getElementById("z2").value = "Audit appliqué correctement";}
+									else if(z2 ==3){
+								document.getElementById("z2").value = "Audit parfaitement appliqué";}
+										else if(z2 == ""){
+											document.getElementById("z2").value = "";}
+				return document.getElementById("z2").value;
+		}
+		function z3(){
+				var z3 = Number(document.querySelector('input[name="z3"]:checked').value);
+				if(z3 == 0){
+							document.getElementById("z3").value = "Alerte! ";
+						}else if(z3 == 1){
+							document.getElementById("z3").value = "A améliorer : ";}
+							else if(z3 ==2) {
+								document.getElementById("z3").value = "Audit appliqué correctement";}
+									else if(z3 ==3){
+								document.getElementById("z3").value = "Audit parfaitement appliqué";}
+										else if(z3 == ""){
+											document.getElementById("z3").value = "";}
+				return document.getElementById("z3").value;
+		}
+		function z4(){
+				var z4 = Number(document.querySelector('input[name="z4"]:checked').value);
+				if(z4 == 0){
+							document.getElementById("z4").value = "Alerte! ";
+						}else if(z4 == 1){
+							document.getElementById("z4").value = "A améliorer : ";}
+							else if(z4 ==2) {
+								document.getElementById("z4").value = "Audit appliqué correctement";}
+									else if(z4 ==3){
+								document.getElementById("z4").value = "Audit parfaitement appliqué";}
+										else if(z4 == ""){
+											document.getElementById("z4").value = "";}
+				return document.getElementById("z4").value;
+		}
+		function z5(){
+				var z5 = Number(document.querySelector('input[name="z5"]:checked').value);
+				if(z5 == 0){
+							document.getElementById("z5").value = "Alerte! ";
+						}else if(z5 == 1){
+							document.getElementById("z5").value = "A améliorer : ";}
+							else if(z5 ==2) {
+								document.getElementById("z5").value = "Audit appliqué correctement";}
+									else if(z5 ==3){
+								document.getElementById("z5").value = "Audit parfaitement appliqué";}
+										else if(z5 == ""){
+											document.getElementById("z5").value = "";}
+				return document.getElementById("z5").value;
+		}
+		function z6(){
+				var z6 = Number(document.querySelector('input[name="z6"]:checked').value);
+				if(z6 == 0){
+							document.getElementById("z6").value = "Alerte! ";
+						}else if(z6 == 1){
+							document.getElementById("z6").value = "A améliorer : ";}
+							else if(z6 ==2) {
+								document.getElementById("z6").value = "Audit appliqué correctement";}
+									else if(z6 ==3){
+								document.getElementById("z6").value = "Audit parfaitement appliqué";}
+										else if(z6 == ""){
+											document.getElementById("z6").value = "";}
+				return document.getElementById("z6").value;
+		}
+		function z7(){
+				var z7 = Number(document.querySelector('input[name="z7"]:checked').value);
+				if(z7 == 0){
+							document.getElementById("z7").value = "Alerte! ";
+						}else if(z7 == 1){
+							document.getElementById("z7").value = "A améliorer : ";}
+							else if(z7 ==2) {
+								document.getElementById("z7").value = "Audit appliqué correctement";}
+									else if(z7 ==3){
+								document.getElementById("z7").value = "Audit parfaitement appliqué";}
+										else if(z7 == ""){
+											document.getElementById("z7").value = "";}
+				return document.getElementById("z7").value;
+		}
+		function z8(){
+				var z8 = Number(document.querySelector('input[name="z8"]:checked').value);
+				if(z8 == 0){
+							document.getElementById("z8").value = "Alerte! ";
+						}else if(z8 == 1){
+							document.getElementById("z8").value = "A améliorer : ";}
+							else if(z8 ==2) {
+								document.getElementById("z8").value = "Audit appliqué correctement";}
+									else if(z8 ==3){
+								document.getElementById("z8").value = "Audit parfaitement appliqué";}
+										else if(z8 == ""){
+											document.getElementById("z8").value = "";}
+				return document.getElementById("z8").value;
+		}
+		function z9(){
+				var z9 = Number(document.querySelector('input[name="z9"]:checked').value);
+				if(z9 == 0){
+							document.getElementById("z9").value = "Alerte! ";
+						}else if(z9 == 1){
+							document.getElementById("z9").value = "A améliorer : ";}
+							else if(z9 ==2) {
+								document.getElementById("z9").value = "Audit appliqué correctement";}
+									else if(z9 ==3){
+								document.getElementById("z9").value = "Audit parfaitement appliqué";}
+										else if(z9 == ""){
+											document.getElementById("z9").value = "";}
+				return document.getElementById("z9").value;
+		}
+		function z10(){
+				var z10 = Number(document.querySelector('input[name="z10"]:checked').value);
+				if(z10 == 0){
+							document.getElementById("z10").value = "Alerte! ";
+						}else if(z10 == 1){
+							document.getElementById("z10").value = "A améliorer : ";}
+							else if(z10 ==2) {
+								document.getElementById("z10").value = "Audit appliqué correctement";}
+									else if(z10 ==3){
+								document.getElementById("z10").value = "Audit parfaitement appliqué";}
+										else if(z10 == ""){
+											document.getElementById("z10").value = "";}
+				return document.getElementById("z10").value;
+		}
+		function z11(){
+				var z11 = Number(document.querySelector('input[name="z11"]:checked').value);
+				if(z11 == 0){
+							document.getElementById("z11").value = "Alerte! ";
+						}else if(z11 == 1){
+							document.getElementById("z11").value = "A améliorer : ";}
+							else if(z11 ==2) {
+								document.getElementById("z11").value = "Audit appliqué correctement";}
+									else if(z11 ==3){
+								document.getElementById("z11").value = "Audit parfaitement appliqué";}
+										else if(z11 == ""){
+											document.getElementById("z11").value = "";}
+				return document.getElementById("z11").value;
+		}
+		function z12(){
+				var z12 = Number(document.querySelector('input[name="z12"]:checked').value);
+				if(z12 == 0){
+							document.getElementById("z12").value = "Alerte! ";
+						}else if(z12 == 1){
+							document.getElementById("z12").value = "A améliorer : ";}
+							else if(z12 ==2) {
+								document.getElementById("z12").value = "Audit appliqué correctement";}
+									else if(z12 ==3){
+								document.getElementById("z12").value = "Audit parfaitement appliqué";}
+										else if(z12 == ""){
+											document.getElementById("z12").value = "";}
+				return document.getElementById("z12").value;
+		}
+		function z13(){
+				var z13 = Number(document.querySelector('input[name="z13"]:checked').value);
+				if(z13 == 0){
+							document.getElementById("z13").value = "Alerte! ";
+						}else if(z13 == 1){
+							document.getElementById("z13").value = "A améliorer : ";}
+							else if(z13 ==2) {
+								document.getElementById("z13").value = "Audit appliqué correctement";}
+									else if(z13 ==3){
+								document.getElementById("z13").value = "Audit parfaitement appliqué";}
+										else if(z13 == ""){
+											document.getElementById("z13").value = "";}
+				return document.getElementById("z13").value;
+		}
+		function z14(){
+				var z14 = Number(document.querySelector('input[name="z14"]:checked').value);
+				if(z14 == 0){
+							document.getElementById("z14").value = "Alerte! ";
+						}else if(z14 == 1){
+							document.getElementById("z14").value = "A améliorer : ";}
+							else if(z14 ==2) {
+								document.getElementById("z14").value = "Audit appliqué correctement";}
+									else if(z14 ==3){
+								document.getElementById("z14").value = "Audit parfaitement appliqué";}
+										else if(z14 == ""){
+											document.getElementById("z14").value = "";}
+				return document.getElementById("z14").value;
+		}
+		function z15(){
+				var z15 = Number(document.querySelector('input[name="z15"]:checked').value);
+				if(z15 == 0){
+							document.getElementById("z15").value = "Alerte! ";
+						}else if(z15 == 1){
+							document.getElementById("z15").value = "A améliorer : ";}
+							else if(z15 ==2) {
+								document.getElementById("z15").value = "Audit appliqué correctement";}
+									else if(z15 ==3){
+								document.getElementById("z15").value = "Audit parfaitement appliqué";}
+										else if(z15 == ""){
+											document.getElementById("z15").value = "";}
+				return document.getElementById("z15").value;
+		}
+		function z16(){
+				var z16 = Number(document.querySelector('input[name="z16"]:checked').value);
+				if(z16 == 0){
+							document.getElementById("z16").value = "Alerte! ";
+						}else if(z16 == 1){
+							document.getElementById("z16").value = "A améliorer : ";}
+							else if(z16 ==2) {
+								document.getElementById("z16").value = "Audit appliqué correctement";}
+									else if(z16 ==3){
+								document.getElementById("z16").value = "Audit parfaitement appliqué";}
+										else if(z16 == ""){
+											document.getElementById("z16").value = "";}
+				return document.getElementById("z16").value;
+		}
+		function trimz1(){
+			let z1=0;
+			if(((document.getElementById("z1").value).includes("Alerte!")==true) || ((document.getElementById("z1").value).includes("A améliorer")==true)){
+				document.getElementById("z1").value = "-Audit 1: "+ document.getElementById("z1").value + "\n";
+			}else{
+				document.getElementById("z1").value = "";
+			}return z1 = document.getElementById("z1").value;
+		}
+		function trimz2(){
+			let z2=0;
+			if(((document.getElementById("z2").value).includes("Alerte!")==true) || ((document.getElementById("z2").value).includes("A améliorer")==true)){
+				document.getElementById("z2").value = "-Audit 2: "+ document.getElementById("z2").value + "\n";
+			}else{
+				document.getElementById("z2").value = "";
+			}return z2 = document.getElementById("z2").value;
+		}
+		function trimz3(){
+			let z3=0;
+			if(((document.getElementById("z3").value).includes("Alerte!")==true) || ((document.getElementById("z3").value).includes("A améliorer")==true)){
+				document.getElementById("z3").value = "-Audit 3: "+ document.getElementById("z3").value + "\n";
+			}else{
+				document.getElementById("z3").value = "";
+			}return z3 = document.getElementById("z3").value;
+		}
+		function trimz4(){
+			let z4=0;
+			if(((document.getElementById("z4").value).includes("Alerte!")==true) || ((document.getElementById("z4").value).includes("A améliorer")==true)){
+				document.getElementById("z4").value = "-Audit 4: "+ document.getElementById("z4").value + "\n";
+			}else{
+				document.getElementById("z4").value = "";
+			}return z4 = document.getElementById("z4").value;
+		}
+		function trimz5(){
+			let z5=0;
+			if(((document.getElementById("z5").value).includes("Alerte!")==true) || ((document.getElementById("z5").value).includes("A améliorer")==true)){
+				document.getElementById("z5").value = "-Audit 5: "+ document.getElementById("z5").value + "\n";
+			}else{
+				document.getElementById("z5").value = "";
+			}return z5 = document.getElementById("z5").value;
+		}
+		function trimz6(){
+			let z6=0;
+			if(((document.getElementById("z6").value).includes("Alerte!")==true) || ((document.getElementById("z6").value).includes("A améliorer")==true)){
+				document.getElementById("z6").value = "-Audit 6: "+ document.getElementById("z6").value + "\n";
+			}else{
+				document.getElementById("z6").value = "";
+			}return z6 = document.getElementById("z6").value;
+		}
+		function trimz7(){
+			let z7=0;
+			if(((document.getElementById("z7").value).includes("Alerte!")==true) || ((document.getElementById("z7").value).includes("A améliorer")==true)){
+				document.getElementById("z7").value = "-Audit 7: "+ document.getElementById("z7").value + "\n";
+			}else{
+				document.getElementById("z7").value = "";
+			}return z7 = document.getElementById("z7").value;
+		}
+		function trimz8(){
+			let z8=0;
+			if(((document.getElementById("z8").value).includes("Alerte!")==true) || ((document.getElementById("z8").value).includes("A améliorer")==true)){
+				document.getElementById("z8").value = "-Audit 8: "+ document.getElementById("z8").value + "\n";
+			}else{
+				document.getElementById("z8").value = "";
+			}return z8 = document.getElementById("z8").value;
+		}
+		function trimz9(){
+			let z9=0;
+			if(((document.getElementById("z9").value).includes("Alerte!")==true) || ((document.getElementById("z9").value).includes("A améliorer")==true)){
+				document.getElementById("z9").value = "-Audit 9: "+ document.getElementById("z9").value + "\n";
+			}else{
+				document.getElementById("z9").value = "";
+			}return z9 = document.getElementById("z9").value;
+		}
+		function trimz10(){
+			let z10=0;
+			if(((document.getElementById("z10").value).includes("Alerte!")==true) || ((document.getElementById("z10").value).includes("A améliorer")==true)){
+				document.getElementById("z10").value = "-Audit 10: "+ document.getElementById("z10").value + "\n";
+			}else{
+				document.getElementById("z10").value = "";
+			}return z10 = document.getElementById("z10").value;
+		}
+		function trimz11(){
+			let z11=0;
+			if(((document.getElementById("z11").value).includes("Alerte!")==true) || ((document.getElementById("z11").value).includes("A améliorer")==true)){
+				document.getElementById("z11").value = "-Audit 11: "+ document.getElementById("z11").value + "\n";
+			}else{
+				document.getElementById("z11").value = "";
+			}return z11 = document.getElementById("z11").value;
+		}
+		function trimz12(){
+			let z12=0;
+			if(((document.getElementById("z12").value).includes("Alerte!")==true) || ((document.getElementById("z12").value).includes("A améliorer")==true)){
+				document.getElementById("z12").value = "-Audit 12: "+ document.getElementById("z12").value + "\n";
+			}else{
+				document.getElementById("z12").value = "";
+			}return z12 = document.getElementById("z12").value;
+		}
+		function trimz13(){
+			let z13=0;
+			if(((document.getElementById("z13").value).includes("Alerte!")==true) || ((document.getElementById("z13").value).includes("A améliorer")==true)){
+				document.getElementById("z13").value = "-Audit 13: "+ document.getElementById("z13").value + "\n";
+			}else{
+				document.getElementById("z13").value = "";
+			}return z13 = document.getElementById("z13").value;
+		}
+		function trimz14(){
+			let z14=0;
+			if(((document.getElementById("z14").value).includes("Alerte!")==true) || ((document.getElementById("z14").value).includes("A améliorer")==true)){
+				document.getElementById("z14").value = "-Audit 14: "+ document.getElementById("z14").value + "\n";
+			}else{
+				document.getElementById("z14").value = "";
+			}return z14 = document.getElementById("z14").value;
+		}
+		function trimz15(){
+			let z15=0;
+			if(((document.getElementById("z15").value).includes("Alerte!")==true) || ((document.getElementById("z15").value).includes("A améliorer")==true)){
+				document.getElementById("z15").value = "-Audit 15: "+ document.getElementById("z15").value + "\n";
+			}else{
+				document.getElementById("z15").value = "";
+			}return z15 = document.getElementById("z15").value;
+		}
+		function trimz16(){
+			let z16=0;
+			if(((document.getElementById("z16").value).includes("Alerte!")==true) || ((document.getElementById("z16").value).includes("A améliorer")==true)){
+				document.getElementById("z16").value = "-Audit 16: "+ document.getElementById("z16").value + "\n";
+			}else{
+				document.getElementById("z16").value = "";
+			}return z16 = document.getElementById("z16").value;
+		}
+		function savez(){ //genere le fichier text contenant les alertes
+			trimz1();
+			trimz2();
+			trimz3();
+			trimz4();
+			trimz5();
+			trimz6();
+			trimz7();
+			trimz8();
+			trimz9();
+			trimz10();
+			trimz11();
+			trimz12();
+			trimz13();
+			trimz14();
+			trimz15();
+			trimz16();
+			var rapportz = new File(["Rapport \n \n"+" Pour mieux maitriser les pratiques SCRUM au sein de votre équipe, veuillez revoir les points suivants:\n \n"+document.getElementById("z1").value+"\n"+document.getElementById("z2").value+"\n"+document.getElementById("z3").value+"\n"+document.getElementById("z4").value+"\n"+document.getElementById("z5").value+"\n"+document.getElementById("z6").value+"\n"+document.getElementById("z7").value+"\n"+document.getElementById("z8").value+"\n"+document.getElementById("z9").value+"\n"+document.getElementById("z10").value+"\n"+document.getElementById("z22").value+"\n"+document.getElementById("z12").value+"\n"+document.getElementById("z13").value+"\n"+document.getElementById("z14").value+"\n"+document.getElementById("z15").value+"\n"+document.getElementById("z16").value],"Rapport.txt",{type: "text/plain;charset=utf8"});
+			saveAs(rapportz);
+		}
+		</script>	
+<div class="card text-center" id="cardContainer">
+		<div class="card-header" id="fiche">
+			<font size="6">Fiche d'évaluation de l'équipe</font>
+		</div>
+	<TABLE BORDER="1" class="table table-striped table-hover table_bg" id="ttable6" hidden="hidden">	
+	 <div class="h3 text-light bg-secondary titre p-2">Intéraction au sein de l'équipe <button onclick="toggle6(this);">Show table</button>	 </div>
+		<TR class="table-danger">
+			<TH> Audit </TH>
+			<TH>Niveau</TH>
+			<TH class="th-lg"> Commentaire </TH>
+		</TR>
+		<TR>
+			<TD>1.	Est-ce que le besoin du client est correctement analysé par le PO ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=1 name="a" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=1 name="a" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=1 name="a" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=1 name="a" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="a1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>2.	Est-ce que ce besoin est découpé en user story clairement rédigées ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=2 name="b" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=2 name="b" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=2 name="b" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=2 name="b" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="b1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>3.	Les fonctionnalités pourraient-elles être mieux exprimées sous la forme de user stories indépendantes, négociables, ayant de la valeur, estimables, suffisamment petites, et testables ?(sigle INVEST)</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=3 name="c" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=3 name="c" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=3 name="c" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=3 name="c" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="c1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>4.	Est-ce que toutes les exigences et les désirs de toutes les parties prenantes sont présents dans le Backlog ? Rappel : le Backlog est émergent.</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=4 name="d" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=4 name="d" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=4 name="d" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=4 name="d" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="d1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>5.	Est-ce que les user story sont priorisées dans le Backlog ? (MoSCoW)</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=5 name="e" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=5 name="e" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=5 name="e" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=5 name="e" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="e1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>6.	La taille du backlog est-elle raisonnable ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=6 name="f" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=6 name="f" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=6 name="f" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=6 name="f" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="f1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>7.	Est-ce que le backlog est présenté lors de chaque planification de sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=7 name="g" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=7 name="g" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=7 name="g" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=7 name="g" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="g1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>8.	Est-ce que le backlog est modifié en fonction des feedbacks du client lors du Sprint Review ? Vos exigences vont évoluer tout le long des discussions régulières que vous aurez avec les parties prenantes / clients à propos du produit en cours de développement.</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=8 name="h" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=8 name="h" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=8 name="h" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=8 name="h" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="h1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD>9.	Est-ce que le PO veille sur la présence du client au Sprint Review ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=9 name="i" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=9 name="i" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=9 name="i" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=9 name="i" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="i1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR class="table-danger">
+			<TD>10.	Est-ce que votre PO ajuste le plan de livraison après la dernière revue de sprint ?</TD>
+			<TD>
+				<div>
+      				<input type="radio" id=10 name="j" value=0>
+      						<label>Non Appliqué</label><br/>
+					<input type="radio" id=10 name="j" value=1>
+      						<label>Appliqué, à améliorer</label><br/>
+					<input type="radio" id=10 name="j" value=2>
+							<label>Appliqué correctement</label><br/>
+					<input type="radio" id=10 name="j" value=3>
+							<label>Parfaitement appliqué</label><br/>
+    			</div>
+			</TD>
+			<TD><textarea size=60 id="j1" cols="10" rows="4" style="width:350px"></textarea></INPUT></TD>
+		</TR>
+		<TR>
+			<TD><button type="button" onclick="totalx()">Cliquer ici pour calculer le total de cette rubrique :</button></TD>
+			<TD><input type="number" placeholder="Total" id="tx"></TD>
+			<TD><button type="button" onclick="performancex()">Votre Performance</button>	<button type="button" onclick="savex()">Générer Rapport</button></TD>
+		</TR>
+
+	<script>
+	</script>
+	
+
+
+</html>
